@@ -1,0 +1,71 @@
+{
+    "grupos": [
+        {
+            "id": 1298,
+            "nombre": "Alvez",
+            "usuarios": [
+                {
+                    "id": 2198,
+                    "nombre": "Diego",
+                    "email": "dd@dd.com",
+                    "contrasenia": "dd.aa123",
+                    "grupoFamiliar": "1298"
+                },
+                {
+                    "id": 2199,
+                    "nombre": "Anabel",
+                    "email": "aa@aa.com",
+                    "contrasenia": "aa.aa123",
+                    "grupoFamiliar": "1298"
+                },
+                {
+                    "id": 2180,
+                    "nombre": "Jose",
+                    "email": "jj@jj.com",
+                    "contrasenia": "jj.aa123",
+                    "grupoFamiliar": "1298"
+                },
+                {
+                    "id": 2181,
+                    "nombre": "Fernando",
+                    "email": "ff@ff.com",
+                    "contrasenia": "ff.aa123",
+                    "grupoFamiliar": "1298"
+                }
+            ]
+        },{
+        "id": 2182,
+        "nombre": "Berto",
+        "usuarios": [
+            {
+                "id": 2182,
+                "nombre": "Victoria",
+                "email": "vv@vv.com",
+                "contrasenia": "vv.bb123",
+                "grupoFamiliar": "1349"
+            },
+            {
+                "id": 2183,
+                "nombre": "Mariana",
+                "email": "mm@mm.com",
+                "contrasenia": "mm.bb123",
+                "grupoFamiliar": "1349"
+            },
+            {
+                "id": 2184,
+                "nombre": "Miryam",
+                "email": "mm@mm.com",
+                "contrasenia": "mm.rr123",
+                "grupoFamiliar": "1349"
+            },
+            {
+                "id": 2185,
+                "nombre": "Andres",
+                "email": "aa@rr.com",
+                "contrasenia": "aa.rr123",
+                "grupoFamiliar": "1349"
+            }
+        ]
+    }
+]
+}

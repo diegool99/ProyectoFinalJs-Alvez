@@ -1,0 +1,88 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Jura, sans-serif;
+  color: #000000;
+  text-align: center;
+}
+
+body {
+  background-image: linear-gradient(
+    to bottom,
+    #393e46,
+    #42535d,
+    #4a6a71,
+    #56817e,
+    #6d9886
+  );
+  background-attachment: fixed;
+}
+
+header div {
+  align-items: center;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  header div {
+    height: 7rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header div {
+    height: 10rem;
+  }
+  header ul li {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+
+.card-header,
+.sct-nueva-tarea,
+header div, main .row {
+  display: flex;
+}
+
+header div,
+.sct-nueva-tarea, main .row {
+  justify-content: center;
+}
+
+.card-header {
+  justify-content: space-between;
+}
+
+.card-header button {
+  padding-top: 1.5rem;
+  height: 0.5rem;
+}
+
+.card,
+.form-floating {
+  margin: 0.8rem;
+}
+
+.section-title {
+  text-align: center;
+}
+
+.form-floating {
+  width: 30rem;
+}
+
+.sct-nueva-tarea {
+  margin-bottom: 2rem;
+}
+
+.sct_tareas {
+  display: block;
+  margin: 1rem;
+  background: rgba(247, 247, 247, 0.25);
+  box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(4.5px);
+  -webkit-backdrop-filter: blur(4.5px);
+  border-radius: 10px;
+}

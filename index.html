@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simulador Interactivo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <header class="container-fluid">
+      <div class="row">
+        <h1>Simulador de tareas</h1>
+      </div>
+      <div class="row d-none">
+        <ul class="nav">
+          <li class="nav-item col-4">
+            <a class="nav-link" aria-current="page" href="#">En cola</a>
+          </li>
+          <li class="nav-item col-4">
+            <a class="nav-link" href="#">En proceso</a>
+          </li>
+          <li class="nav-item col-4">
+            <a class="nav-link" href="#">Finalizado</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main class="container-fluid">
+      <section id="SeccionLogin" class="row">
+        <div class="mb-3 col-6">
+          <label for="InputEmail1" class="form-label">Email</label>
+          <input type="email" class="form-control" id="InputEmail1">
+          <div class="form-text">Proba con dd@dd.com</div>
+        </div>
+        <div class="mb-3 col-6">
+          <label for="InputPassword1" class="form-label">Contraseña</label>
+          <input type="password" class="form-control" id="InputPassword1">
+          <div class="form-text">Proba con dd.aa123</div>
+        </div>
+        <button id="btnLogin" type="submit" class="btn btn-primary col-6">Iniciar sesión</button>
+      </section>
+      <div class="row" id="SeccionTareas">
+        <section class="col-12 sct-nueva-tarea">
+          <form action="">
+            <div class="form-floating">
+              <input
+                type="text"
+                class="form-control"
+                id="inputCategoria"
+                placeholder="Categoria"
+              />
+              <label for="inputCategoria">Categoria</label>
+            </div>
+            <div class="form-floating">
+              <select
+                class="form-control"
+                id="inputResponsable"
+              >
+              </select>
+              <label for="inputResponsable">Responsable</label>
+            </div>
+            <div class="form-floating">
+              <input
+                type="text"
+                class="form-control"
+                id="inputTarea"
+                placeholder="Tarea"
+              />
+              <label for="inputTarea">Tarea a realizar</label>
+            </div>
+            <div class="form-floating">
+              <textarea
+                class="form-control"
+                id="inputDescripcion"
+                style="height: 8rem"
+                placeholder="Descipcion"
+              ></textarea>
+              <label for="inputDescripcion">Descripcion</label>
+            </div>
+            <div class="d-grid gap-2 col-6 col-lg-8 mx-auto">
+                <button class="btn btn-primary" type="button" id="iCrearTarea">Crear</button>
+              </div>
+          </form>
+        </section>
+        <section id="tareasEnCola" class="sct_tareas col-3">
+          
+          <div class="section-title">
+            <h2>En Cola</h2>
+          </div>
+          
+        </section>
+        <section id="tareasEnProceso" class="sct_tareas col-3">
+          
+          <div class="section-title">
+            <h2>En Proceso</h2>
+          </div>
+          
+        </section>
+        <section id="tareasFinalizadas" class="sct_tareas col-3">
+          
+          <div class="section-title">
+            <h2>Finalizado</h2>
+          </div>
+
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="d-flex" id="toastLogin">
+          <div class="toast-body">
+            <p id="avisoLogin"></p>
+          </div>
+          <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/Tarea.js"></script>
+    <script src="./js/Usuario.js"></script>
+    <script src="./js/GrupoFamiliar.js"></script>
+    <script src="./js/scripts.js"></script>
+  </body>
+</html>
